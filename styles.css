@@ -7,7 +7,7 @@
     --border-color: #e5e7eb;
     --shadow-color: rgba(0, 0, 0, 0.1);
     --progress-bg: #e5e7eb;
-    --hl-color: rgb(191, 255, 143);
+    --hl-color: #deffb1;
 }
 
 [data-theme="dark"] {
@@ -19,7 +19,7 @@
     --border-color: #374151;
     --shadow-color: rgba(0, 0, 0, 0.3);
     --progress-bg: #374151;
-    --hl-color: #6a8d63;
+    --hl-color: #deffb1;
 }
 
 * {
@@ -95,6 +95,7 @@ header {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     opacity: 0.3;
+    color: rgb(7, 18, 42);
 }
 
 .header-content h1 > span {
