@@ -96,7 +96,7 @@ header {
     color: rgb(187, 206, 250);
 }
 
-.header-content h1 .envelope-icon {
+.header-content .email-link .envelope-icon {
     padding-right: 6px;
 }
 
