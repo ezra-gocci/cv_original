@@ -96,11 +96,11 @@ header {
     color: rgb(187, 206, 250);
 }
 
-.header-content h1 envelope-icon {
+.header-content h1 .envelope-icon {
     padding-right: 6px;
 }
 
-.header-content email-link {
+.header-content .email-link {
     color: rgb(133, 198, 255);
 }
 
