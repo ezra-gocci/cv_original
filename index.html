@@ -1,162 +1,77 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <title>Your Name - CV</title>
+    <title>Work Experience</title>
 </head>
 <body>
-    <nav class="nav-menu">
-        <ul>
-            <li><a href="#header">Home</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
-        <button id="theme-toggle" aria-label="Toggle theme">
-            <i class="fas fa-moon"></i>
-        </button>
-    </nav>
+    <h1>Work Experience</h1>
 
-    <header id="header">
-        <div class="header-content">
-            <h1>Your Name</h1>
-            <p class="title">Full Stack Developer / Architect</p>
-            <div class="social-links">
-                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
-    </header>
+    <h2>Fullstack Engineer / Architect</h2>
+    <p><strong>Domains:</strong> Pharmacology AI, FinTech, News Media</p>
+    <p><strong>Languages:</strong> Python, TypeScript, Go, Rust</p>
 
-    <section id="experience">
-        <h2><i class="fas fa-briefcase"></i> Experience</h2>
-        <div class="timeline">
-            <div class="timeline-item">
-                <h3>Lead Software Architect</h3>
-                <p class="company">Enterprise Tech Solutions</p>
-                <p class="duration">2022 - Present</p>
-                <ul class="achievements">
-                    <li>Designed and implemented a microservices architecture handling 1M+ daily transactions, reducing system latency by 40%</li>
-                    <li>Led the development of a multi-tenant SaaS platform using domain-driven design principles</li>
-                    <li>Architected an event-driven system using Apache Kafka for real-time data processing</li>
-                    <li>Implemented CQRS pattern with event sourcing, improving system scalability and performance</li>
-                    <li>Designed API gateway solution handling authentication, rate limiting, and request routing for 50+ microservices</li>
-                    <li>Created architecture decision records (ADRs) and technical documentation improving team alignment by 60%</li>
-                </ul>
-            </div>
+    <hr>
 
-            <div class="timeline-item">
-                <h3>Senior Full Stack Developer</h3>
-                <p class="company">Tech Innovations Inc</p>
-                <p class="duration">2020 - 2022</p>
-                <ul class="achievements">
-                    <li>Developed a real-time collaborative editor using WebSocket and operational transformation</li>
-                    <li>Built a React-based dashboard with TypeScript, reducing bug reports by 45%</li>
-                    <li>Implemented authentication system using OAuth2 and JWT tokens</li>
-                    <li>Created reusable component library used across 5 different projects</li>
-                    <li>Optimized database queries reducing average response time from 2s to 200ms</li>
-                    <li>Integrated AI-powered features using OpenAI API and vector embeddings</li>
-                </ul>
-            </div>
+    <h3>Insilico Medicine (Pharma AI Suite)</h3>
+    <p><strong>October 2023 – April 2024 | Remote | Abu Dhabi, UAE</strong></p>
+    <p><a href="https://insilico.com">insilico.com</a></p>
+    <ul>
+        <li>Built features enhancing data representation, RAG endpoints, and user management, improving user experience, expanding the user base, and saving team time (Python, FastAPI, PostgreSQL, RabbitMQ, AWS).</li>
+        <li>Led a major product migration from Docker to Kubernetes clusters, enabling scalability, faster updates, and runtime control (K8s, ArgoCD, AWS).</li>
+        <li>Integrated a data lake API to deliver real-time data, improving data freshness and speed for users.</li>
+        <li>Developed an ETL pipeline to scrape clinical trial data, transform it, generate embeddings, and link to existing datasets, optimizing prediction model retraining (Go, Python, Airflow).</li>
+        <li>Prototyped a trial site selection tool using AWS Bedrock and agents, establishing streamlined team processes (FastAPI, PostgreSQL, Qdrant).</li>
+    </ul>
+    <p><strong>Tech Stack:</strong> Python, Go, FastAPI, PostgreSQL+PGVector, AWS, Kubernetes, Terraform, Airflow, Qdrant, RabbitMQ</p>
 
-            <div class="timeline-item">
-                <h3>DevOps Engineer</h3>
-                <p class="company">Cloud Solutions Ltd</p>
-                <p class="duration">2019 - 2020</p>
-                <ul class="achievements">
-                    <li>Implemented GitOps workflow with ArgoCD, reducing deployment time by 70%</li>
-                    <li>Designed and maintained Kubernetes clusters across multiple cloud providers (AWS, GCP)</li>
-                    <li>Created Infrastructure as Code using Terraform, managing 200+ cloud resources</li>
-                    <li>Implemented zero-downtime deployment strategy reducing system interruptions by 99%</li>
-                    <li>Set up monitoring and alerting using Prometheus and Grafana</li>
-                    <li>Automated CI/CD pipelines reducing deployment time from hours to minutes</li>
-                    <li>Implemented security scanning in CI/CD pipeline, identifying vulnerabilities early</li>
-                </ul>
-            </div>
+    <hr>
 
-            <div class="timeline-item">
-                <h3>Data Engineer</h3>
-                <p class="company">Data Analytics Corp</p>
-                <p class="duration">2018 - 2019</p>
-                <ul class="achievements">
-                    <li>Designed ETL pipelines processing 5TB+ of daily data using Apache Spark</li>
-                    <li>Implemented data lake architecture on AWS S3 with Delta Lake for ACID transactions</li>
-                    <li>Built real-time analytics pipeline using Kafka Streams and ksqlDB</li>
-                    <li>Created data quality monitoring system reducing data inconsistencies by 80%</li>
-                    <li>Implemented vector similarity search using FAISS for recommendation engine</li>
-                    <li>Developed automated data validation framework using Great Expectations</li>
-                    <li>Optimized data warehouse queries reducing processing costs by 60%</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    <h3>Haulogy (Energy Market Software)</h3>
+    <p><strong>September 2023 – October 2023 | Remote | Belgium</strong></p>
+    <p><a href="https://haulogy.net">haulogy.net</a></p>
+    <ul>
+        <li>Migrated forecasting and interpolation logic from Pandas to Polars, improving backend processing speed for clients.</li>
+    </ul>
+    <p><strong>Tech Stack:</strong> Python, FastAPI, PostgreSQL, Kubernetes, AWS, Terraform, RabbitMQ</p>
 
-    <section id="skills">
-        <h2><i class="fas fa-code"></i> Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3>Languages</h3>
-                <div class="skill-item">
-                    <span>Python</span>
-                    <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
-                </div>
-                <div class="skill-item">
-                    <span>Golang</span>
-                    <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
-                </div>
-                <div class="skill-item">
-                    <span>TypeScript</span>
-                    <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
-                </div>
-                <div class="skill-item">
-                    <span>Rust</span>
-                    <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3>Technologies</h3>
-                <div class="skill-item">
-                    <span>Kubernetes</span>
-                    <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
-                </div>
-                <div class="skill-item">
-                    <span>AWS</span>
-                    <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
-                </div>
-                <div class="skill-item">
-                    <span>React</span>
-                    <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <hr>
 
-    <section id="projects">
-        <h2><i class="fas fa-project-diagram"></i> Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <div class="project-content">
-                    <h3>AI-Powered Analytics Platform</h3>
-                    <p>Built a scalable analytics platform using microservices architecture, vector databases, and RAG for intelligent data processing.</p>
-                    <div class="tech-stack">
-                        <span>Python</span>
-                        <span>React</span>
-                        <span>AWS</span>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more project cards here -->
-        </div>
-    </section>
+    <h3>Nexign (InPlat Payment Platform)</h3>
+    <p><strong>September 2018 – November 2023 | Remote | Dubai, UAE</strong></p>
+    <p><a href="https://nexign.com">nexign.com</a></p>
+    <ul>
+        <li>Architected and delivered a PCI DSS-compliant payment platform for 20M+ users, supporting money transfers, marketplace purchases, wallets, subscriptions, and tokenized payments.</li>
+        <li>Designed and implemented microservices for async/sync tasks, event-driven communication, and external integrations (e.g., Apple Pay, Google Pay).</li>
+        <li>Developed tracing tools for structured, secure logs and migrated legacy components to modern frameworks (FastAPI).</li>
+        <li>Integrated fiscal receipt, SMS API, and social network authorization for seamless user experience.</li>
+        <li>Proactively debugged payment issues, optimizing processes and system reliability.</li>
+    </ul>
+    <p><strong>Tech Stack:</strong> Python (Tornado, Aiohttp, FastAPI), Go, Rust, PHP, PostgreSQL, Kubernetes, RabbitMQ, Kafka, Grafana, Jaeger</p>
 
-    <footer>
-        <p>Contact: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-        <p class="copyright"> 2023 Your Name. All rights reserved.</p>
-    </footer>
+    <hr>
 
-    <script src="script.js"></script>
+    <h3>Team Lead / Senior Frontend Developer – Progredis</h3>
+    <p><strong>September 2015 – July 2018 | Moscow, Russia</strong></p>
+    <p><a href="http://www.progredis.ru">progredis.ru</a></p>
+    <ul>
+        <li>Established and led a 7-member development team.</li>
+        <li>Rebuilt document management solutions with React, replacing Backbone.js.</li>
+        <li>Engineered a Role/State-driven form rendering system and backend APIs.</li>
+    </ul>
+    <p><strong>Tech Stack:</strong> TypeScript, React, Java, PostgreSQL</p>
+
+    <hr>
+
+    <h3>Additional Experience</h3>
+    <ul>
+        <li>Developed user moderation tools for high-traffic news platforms (React/Django/MongoDB/ElasticSearch).</li>
+        <li>Built a trade statistics service and user verification system for Bitcoin marketplaces (Django/MySQL).</li>
+        <li>Released an ad analytics tool for video streaming platforms (Django/MySQL).</li>
+        <li>Created a semantic news feed tagging platform for a national news site (Java, NodeJS, MongoDB).</li>
+        <li>Led ETL migration projects for large banks (Python, SQL, Sybase, Oracle).</li>
+        <li>Designed an off-market stock trading system integrated with a desktop messenger (C++).</li>
+    </ul>
 </body>
 </html>
