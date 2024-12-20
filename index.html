@@ -1,77 +1,234 @@
 <!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Your Name - CV</title>
+</head>
+<body>
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+        <button id="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
+    <header id="header">
+        <div class="header-content">
+            <h1>Konstantin Ezra Gonciarou</h1>
+            <p class="title">Fullstack Engineer / Architect</p>
+            <div class="social-links">
+                <a href="https://github.com/ezra-gocci" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="www.linkedin.com/in/ezra-gocci" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section id="experience">
+        <h2><i class="fas fa-briefcase"></i> Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Senior Software Developer / Architect</h3>
+                <p class="company">@ Insilico Medicine (Pharma AI Suite)</p>
+                <p class="duration">October 2023 - April 2024</p>
+                <p class="date-location"> – April 2024 | Remote, Abu Dhabi, UAE</p>
+                <p><a href="https://insilico.com" target="_blank">https://insilico.com</a></p>
+                <ul class="achievements">
+                    <li><strong>Enhanced User Experience & Efficiency:</strong> Developed new features, including RAG endpoints and user management, improving scalability and reducing administrative workload.</li>
+                    <li><strong>Infrastructure Modernization:</strong> Migrated deployments from Docker to Kubernetes, enabling frequent updates and better scalability.</li>
+                    <li><strong>Data Integration:</strong> Transitioned backend to utilize a data lake for real-time, faster data access.</li>
+                    <li><strong>ETL Pipelines:</strong> Built an ETL process to scrape, transform, and integrate clinical trial data into the data lake, enhancing AI model retraining accuracy.</li>
+                    <li><strong>Prototyping with AI:</strong> Developed a trial clinic selection prototype using AWS Bedrock and custom data enrichment.</li>
+                </ul>
+                <p class="tech-stack"><strong>Tech Stack:</strong> Python, Go, FastAPI, PostgreSQL, AWS, Kubernetes, Terraform, RabbitMQ, Apache Airflow, Qdrant</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Senior Software Developer</h3>
+                <p class="company">@ Haulogy (Energy Markets Platform)</p>
+                <p class="duration">September 2023 - October 2023 | Remote, Belgium</p>
+                <p><a href="https://haulogy.net" target="_blank">https://haulogy.net</a></p>
+                <ul class="achievements">
+                    <li><strong>Performance Optimization:</strong> Migrated backend processes from Pandas to Polars, achieving faster data interpolation and forecasting for clients.</li>
+                </ul>
+                <p class="tech-stack"><strong>Tech Stack:</strong> Python, FastAPI, PostgreSQL, AWS, Kubernetes, Terraform</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Senior Software Developer</h3>
+                <p class="company">@ Nexign (InPlat Payment Processing)</p>
+                <p class="duration">September 2018 - November 2023 | Remote, Dubai, UAE</p>
+                <p><a href="https://nexign.com" target="_blank">https://nexign.com</a></p>
+                <ul class="achievements">
+                    <li><strong>Scalable Payment Platform:</strong> Designed and launched a PCI DSS-compliant payment platform for 20M+ users, enabling seamless payments and wallet services.</li>
+                    <li><strong>Service-Oriented Design:</strong> Architected microservices solutions with event-driven communication for core payment operations.</li>
+                    <li><strong>System Modernization:</strong> Migrated legacy systems (Tornado/PHP) to FastAPI, enhancing performance and maintainability.</li>
+                    <li><strong>Advanced Monitoring:</strong> Built a tracing component for structured, secure logging.</li>
+                    <li><strong>Third-Party Integrations:</strong> Connected with retail fiscal APIs, mobile operator SMS services, and tokenized card processing systems.</li>
+                </ul>
+                <p class="tech-stack"><strong>Tech Stack:</strong> Python (FastAPI, Tornado), Go, Rust, PHP, PostgreSQL, RabbitMQ, Kafka, Kubernetes, Grafana, Jaeger</p>
+
+            </div>
+
+            <div class="timeline-item">
+                <h3>Team Lead / Senior Frontend Developer</h3>
+                <p class="company">@ Progredis</p>
+                <p class="duration">September 2015 - July 2018 | Moscow, Russia</p>
+                <p><a href="http://www.progredis.ru" target="_blank">http://www.progredis.ru</a></p>
+                <ul class="achievements">
+                    <li><strong>Team Leadership:</strong> Managed a team of 7 developers, establishing efficient workflows.</li>
+                    <li><strong>Frontend Modernization:</strong> Redeveloped a document management system using React.</li>
+                    <li><strong>Dynamic Form Processing:</strong> Created Role/State-based dynamic forms using server-generated schemas.</li>
+                </ul>
+                <p class="tech-stack"><strong>Tech Stack:</strong> TypeScript, React, Java, PostgreSQL</p>
+            </div>
+
+            <div class="timeline-item">
+                <h3>Previous Work Experience Highlights</h3>
+                <p class="company">Data Analytics Corp</p>
+                <p class="duration">2018 - 2019</p>
+                <ul class="achievements">
+                    <li>Built a user moderation platform for a high-traffic news site (React/Django).</li>
+                    <li>Designed trade statistics and user verification systems for a Bitcoin marketplace (Django/MySQL).</li>
+                    <li>Developed a semantic news feed attribution system for a national news portal (Java/Node.js).</li>
+                    <li>Launched an off-market stock trading system via a desktop messenger (C++).</li>
+                    <li>Led data migration and ETL process development for a major bank (Python/SQL).</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2><i class="fas fa-code"></i> Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <div class="skill-item">
+                    <span>Python</span>
+                    <div class="progress-bar"><div class="progress" style="width: 95%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>Golang</span>
+                    <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>TypeScript</span>
+                    <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>Rust</span>
+                    <div class="progress-bar"><div class="progress" style="width: 75%"></div></div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Technologies</h3>
+                <div class="skill-item">
+                    <span>Kubernetes</span>
+                    <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>AWS</span>
+                    <div class="progress-bar"><div class="progress" style="width: 85%"></div></div>
+                </div>
+                <div class="skill-item">
+                    <span>React</span>
+                    <div class="progress-bar"><div class="progress" style="width: 90%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>AI-Powered Analytics Platform</h3>
+                    <p>Built a scalable analytics platform using microservices architecture, vector databases, and RAG for intelligent data processing.</p>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>React</span>
+                        <span>AWS</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more project cards here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+        <p class="copyright"> 2023 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work Experience</title>
+    <title>CV - Fullstack Engineer / Architect</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+        p {
+            margin: 5px 0;
+        }
+        .company {
+            font-weight: bold;
+        }
+        .date-location {
+            font-style: italic;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        ul {
+            margin: 0 0 15px 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .tech-stack {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Work Experience</h1>
-
-    <h2>Fullstack Engineer / Architect</h2>
+    <h1></h1>
     <p><strong>Domains:</strong> Pharmacology AI, FinTech, News Media</p>
     <p><strong>Languages:</strong> Python, TypeScript, Go, Rust</p>
 
-    <hr>
 
-    <h3>Insilico Medicine (Pharma AI Suite)</h3>
-    <p><strong>October 2023 – April 2024 | Remote | Abu Dhabi, UAE</strong></p>
-    <p><a href="https://insilico.com">insilico.com</a></p>
     <ul>
-        <li>Built features enhancing data representation, RAG endpoints, and user management, improving user experience, expanding the user base, and saving team time (Python, FastAPI, PostgreSQL, RabbitMQ, AWS).</li>
-        <li>Led a major product migration from Docker to Kubernetes clusters, enabling scalability, faster updates, and runtime control (K8s, ArgoCD, AWS).</li>
-        <li>Integrated a data lake API to deliver real-time data, improving data freshness and speed for users.</li>
-        <li>Developed an ETL pipeline to scrape clinical trial data, transform it, generate embeddings, and link to existing datasets, optimizing prediction model retraining (Go, Python, Airflow).</li>
-        <li>Prototyped a trial site selection tool using AWS Bedrock and agents, establishing streamlined team processes (FastAPI, PostgreSQL, Qdrant).</li>
-    </ul>
-    <p><strong>Tech Stack:</strong> Python, Go, FastAPI, PostgreSQL+PGVector, AWS, Kubernetes, Terraform, Airflow, Qdrant, RabbitMQ</p>
+        </ul>
 
-    <hr>
+    <h2></h2>
 
-    <h3>Haulogy (Energy Market Software)</h3>
-    <p><strong>September 2023 – October 2023 | Remote | Belgium</strong></p>
-    <p><a href="https://haulogy.net">haulogy.net</a></p>
-    <ul>
-        <li>Migrated forecasting and interpolation logic from Pandas to Polars, improving backend processing speed for clients.</li>
-    </ul>
-    <p><strong>Tech Stack:</strong> Python, FastAPI, PostgreSQL, Kubernetes, AWS, Terraform, RabbitMQ</p>
-
-    <hr>
-
-    <h3>Nexign (InPlat Payment Platform)</h3>
-    <p><strong>September 2018 – November 2023 | Remote | Dubai, UAE</strong></p>
-    <p><a href="https://nexign.com">nexign.com</a></p>
-    <ul>
-        <li>Architected and delivered a PCI DSS-compliant payment platform for 20M+ users, supporting money transfers, marketplace purchases, wallets, subscriptions, and tokenized payments.</li>
-        <li>Designed and implemented microservices for async/sync tasks, event-driven communication, and external integrations (e.g., Apple Pay, Google Pay).</li>
-        <li>Developed tracing tools for structured, secure logs and migrated legacy components to modern frameworks (FastAPI).</li>
-        <li>Integrated fiscal receipt, SMS API, and social network authorization for seamless user experience.</li>
-        <li>Proactively debugged payment issues, optimizing processes and system reliability.</li>
-    </ul>
-    <p><strong>Tech Stack:</strong> Python (Tornado, Aiohttp, FastAPI), Go, Rust, PHP, PostgreSQL, Kubernetes, RabbitMQ, Kafka, Grafana, Jaeger</p>
-
-    <hr>
-
-    <h3>Team Lead / Senior Frontend Developer – Progredis</h3>
-    <p><strong>September 2015 – July 2018 | Moscow, Russia</strong></p>
-    <p><a href="http://www.progredis.ru">progredis.ru</a></p>
-    <ul>
-        <li>Established and led a 7-member development team.</li>
-        <li>Rebuilt document management solutions with React, replacing Backbone.js.</li>
-        <li>Engineered a Role/State-driven form rendering system and backend APIs.</li>
-    </ul>
-    <p><strong>Tech Stack:</strong> TypeScript, React, Java, PostgreSQL</p>
-
-    <hr>
-
-    <h3>Additional Experience</h3>
-    <ul>
-        <li>Developed user moderation tools for high-traffic news platforms (React/Django/MongoDB/ElasticSearch).</li>
-        <li>Built a trade statistics service and user verification system for Bitcoin marketplaces (Django/MySQL).</li>
-        <li>Released an ad analytics tool for video streaming platforms (Django/MySQL).</li>
-        <li>Created a semantic news feed tagging platform for a national news site (Java, NodeJS, MongoDB).</li>
-        <li>Led ETL migration projects for large banks (Python, SQL, Sybase, Oracle).</li>
-        <li>Designed an off-market stock trading system integrated with a desktop messenger (C++).</li>
-    </ul>
 </body>
 </html>
