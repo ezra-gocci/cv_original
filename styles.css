@@ -1,11 +1,12 @@
 :root {
-    --primary-color: #2563eb;
+    --primary-color: #cecede;
     --text-color: #1f2937;
     --bg-color: #ffffff;
     --card-bg: #f3f4f6;
     --border-color: #e5e7eb;
     --shadow-color: rgba(0, 0, 0, 0.1);
     --progress-bg: #e5e7eb;
+    --hl-color: #54ff32;
 }
 
 [data-theme="dark"] {
@@ -16,6 +17,7 @@
     --border-color: #374151;
     --shadow-color: rgba(0, 0, 0, 0.3);
     --progress-bg: #374151;
+    --hl-color: #6a8d63;
 }
 
 * {
@@ -90,6 +92,7 @@ header {
 .header-content h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
+    opacity: 0.3;
 }
 
 .header-content h1 i {
@@ -108,6 +111,7 @@ header {
     font-size: 1.5rem;
     opacity: 0.9;
     margin-bottom: 2rem;
+    color: var(--hl-color);
 }
 
 .social-links {
