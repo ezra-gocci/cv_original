@@ -1,16 +1,18 @@
 :root {
-    --primary-color: #cecede;
+    --primary-color: #a6a6d1;
+    --primary-bg-color: #cecede;
     --text-color: #1f2937;
     --bg-color: #ffffff;
     --card-bg: #f3f4f6;
     --border-color: #e5e7eb;
     --shadow-color: rgba(0, 0, 0, 0.1);
     --progress-bg: #e5e7eb;
-    --hl-color: #54ff32;
+    --hl-color: rgb(191, 255, 143);
 }
 
 [data-theme="dark"] {
-    --primary-color: #60a5fa;
+    --primary-color: #a6a6d1;
+    --primary-bg-color: #cecede;
     --text-color: #f3f4f6;
     --bg-color: #111827;
     --card-bg: #1f2937;
@@ -81,7 +83,7 @@ header {
     justify-content: center;
     text-align: center;
     padding: 2rem;
-    background: linear-gradient(135deg, var(--primary-color) 0%, #1d4ed8 100%);
+    background: linear-gradient(135deg, var(--primary-bg-color) 0%, #1d4ed8 100%);
     color: white;
 }
 
@@ -95,8 +97,9 @@ header {
     opacity: 0.3;
 }
 
-.header-content h1 i {
+.header-content h1 > span {
     color: rgb(187, 206, 250);
+    opacity: 0.95;
 }
 
 .header-content .email-link .envelope-icon {
