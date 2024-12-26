@@ -339,3 +339,33 @@ footer a:hover {
   50% { opacity: 1; }
   100% { opacity: 0; }
 }
+
+
+/* Download Button */
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: #4a90e2; /* Button background */
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth hover effects */
+}
+
+/* Hover Effect */
+.download-btn:hover {
+  background-color: #357abd; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight upward movement */
+}
+
+/* Icon Styling */
+.download-btn .icon {
+  margin-right: 10px; /* Space between icon and text */
+  font-size: 1.2rem; /* Slightly larger icon */
+}
