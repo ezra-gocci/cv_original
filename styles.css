@@ -289,3 +289,53 @@ footer a:hover {
         padding: 3rem 1rem;
     }
 }
+
+/* Scroll Indicator Container */
+.scroll-indicator {
+  position: absolute;
+  bottom: 10px; /* Position near the bottom of the viewport */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  animation: fade-in 2s ease-in-out infinite; /* Smooth fade-in animation */
+  z-index: 100; /* Ensure it appears on top */
+}
+
+/* Scroll Text */
+.scroll-indicator .scroll-text {
+  font-size: 1rem;
+  color: #555;
+  font-family: Arial, sans-serif;
+  margin-bottom: 5px;
+}
+
+/* Arrow Indicator */
+.scroll-indicator .arrow {
+  width: 15px;
+  height: 15px;
+  border-left: 2px solid #555;
+  border-bottom: 2px solid #555;
+  transform: rotate(45deg);
+  margin: 0 auto;
+  animation: bounce 1.5s infinite;
+}
+
+/* Arrow Bounce Animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translate(-50%, 0) rotate(45deg);
+  }
+  40% {
+    transform: translate(-50%, -10px) rotate(45deg);
+  }
+  60% {
+    transform: translate(-50%, -5px) rotate(45deg);
+  }
+}
+
+/* Fade-In Animation */
+@keyframes fade-in {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
